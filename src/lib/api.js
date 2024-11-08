@@ -6,7 +6,7 @@ import { DJANGO_API_ENDPOINT } from "@/config/defaults";
 
 export async function getOrderList() {
     try {
-      const response = await fetch(`${DJANGO_API_ENDPOINT}/customer/orderslist`);
+      const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/orderslist`);
       if (!response.ok) {
         throw new Error(`Failed to fetch orders: ${response.statusText}`);
       }
@@ -21,7 +21,7 @@ export async function getOrderList() {
 
   export async function getTodayOrderDetailList() {
     try {
-      const response = await fetch(`${DJANGO_API_ENDPOINT}/customer/todays_detail_order_list`);                              
+      const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/todays_detail_order_list`);                              
       if (!response.ok) {
         throw new Error(`Failed to fetch orders: ${response.statusText}`);
       }
@@ -37,7 +37,7 @@ export async function getOrderList() {
 
 export async function submitOrder(data) {
   try {
-    const response = await fetch(`${DJANGO_API_ENDPOINT}/customer/create_order_item`, {
+    const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/create_order_item`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -61,7 +61,7 @@ export async function updateOrderStatus(data) {
 
   console.log(data)
   try {
-    const response = await fetch(`${DJANGO_API_ENDPOINT}/customer/update_order_status`, {
+    const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/update_order_status`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -83,7 +83,7 @@ export async function updateOrderStatus(data) {
 
 export async function fetchFoodInfo() {
   try {
-    const response = await fetch(`${DJANGO_API_ENDPOINT}/food/food_info_all`);
+    const response = await fetch(`${DJANGO_API_ENDPOINT}api/food/food_info_all`);
     if (!response.ok) {
       throw new Error("Failed to fetch food information");
     }
@@ -97,7 +97,8 @@ export async function fetchFoodInfo() {
 export async function submitUsername(data) {
 
   try{
-    const response = await fetch(`${DJANGO_API_ENDPOINT}/customer/create_customer`,{
+    console.log(DJANGO_API_ENDPOINT)
+    const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/create_customer`,{
       method: "POST",
       headers:{
         "content-type":"application/json"
@@ -120,7 +121,7 @@ export async function initiateOrder(data){
 
   try{
 
-    const response = await fetch(`${DJANGO_API_ENDPOINT}/customer/create_orders`, {
+    const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/create_orders`, {
 
       method: "POST",
       headers:{
