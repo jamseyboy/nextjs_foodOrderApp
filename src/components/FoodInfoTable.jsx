@@ -1,6 +1,6 @@
 // components/FoodInfoTable.js
 import { useEffect, useState } from "react";
-import { fetchFoodInfo } from "../lib/api";
+import { fetchFoodInfo } from "../lib/foods/api";
 
 export default function FoodInfoTable() {
   const [foodInfo, setFoodInfo] = useState([]);
