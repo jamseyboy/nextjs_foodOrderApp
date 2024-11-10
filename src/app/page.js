@@ -15,12 +15,12 @@ export default function Home() {
           </button>
         </Link>
         <Link href="/foods">
-        <button>
+        <button className="bg-blue-500 text-white p-2 rounded">
           Create Food items for Today
         </button>
         </Link>
         <Link href="/TodayorderDetails">
-        <button>
+        <button className="bg-blue-500 text-white p-2 rounded">
           See order list for Today
         </button>
         </Link>
