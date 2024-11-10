@@ -14,6 +14,9 @@ export default function Home() {
             Go to Order Page
           </button>
         </Link>
+        <Link href="/">
+        
+        </Link>
       </main>
     </div>
   );
