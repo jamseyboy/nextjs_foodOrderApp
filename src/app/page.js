@@ -11,11 +11,18 @@ export default function Home() {
         </div>
         <Link href="/orders/createCustomer">
           <button className="bg-blue-500 text-white p-2 rounded">
-            Go to Order Page
+            Go to Order Page for customer
           </button>
         </Link>
-        <Link href="/">
-        
+        <Link href="/foods">
+        <button>
+          Create Food items for Today
+        </button>
+        </Link>
+        <Link href="/TodayorderDetails">
+        <button>
+          See order list for Today
+        </button>
         </Link>
       </main>
     </div>
