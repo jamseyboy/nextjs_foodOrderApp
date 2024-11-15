@@ -84,7 +84,7 @@ export async function updateOrderStatus(data) {
 
 export async function fetchFoodInfo() {
   try {
-    const response = await fetch(`${DJANGO_API_ENDPOINT}api/food/food_info_all`);
+    const response = await fetch(`${DJANGO_API_ENDPOINT}api/food/todays_food`);
     if (!response.ok) {
       throw new Error("Failed to fetch food information");
     }
