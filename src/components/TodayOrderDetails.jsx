@@ -76,8 +76,8 @@ const TodayOrderDetailTable = ({ todayOrderDetails = {}, onButtonClick }) => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {orders.map((order) => (
-                <div key={order.id} className="border border-gray-300 p-4 rounded shadow-sm bg-white">
-                  <p className="text-sm font-semibold">Order ID: {order.id}</p>
+                <div key={order.item_id} className="border border-gray-300 p-4 rounded shadow-sm bg-white">
+                  <p className="text-sm font-semibold">Item ID: {order.item_id}</p>
                   <p className="text-sm">Food Name: <span className="font-medium">{order.food_name}</span></p>
                   <p className="text-sm">Price: <span className="font-medium">{order.food_price}</span></p>
                   <p className="text-sm">Quantity: <span className="font-medium">{order.food_quantity}</span></p>
