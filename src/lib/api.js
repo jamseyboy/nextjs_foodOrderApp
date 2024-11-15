@@ -36,6 +36,7 @@ export async function getOrderList() {
 
 
 export async function submitOrder(data) {
+  console.log(data)
   try {
     const response = await fetch(`${DJANGO_API_ENDPOINT}api/customer/create_order_item`, {
       method: "POST",
