@@ -209,16 +209,16 @@ NEXT_PUBLIC_DJANGO_BASE_URL=https://<your-backend-domain>.up.railway.app
 
 ```
 ┌─────────────────────┐        HTTPS        ┌──────────────────────┐
-│  Next.js Frontend    │ ───────────────────▶│  Django Ninja API     │
-│  (Railway service)   │   /api/...           │  (Railway service,    │
-│  NEXT_PUBLIC_DJANGO_  │ ◀───────────────────│   Dockerfile + gunicorn)│
-│  BASE_URL             │      JSON            └──────────┬───────────┘
-└─────────────────────┘                                  │
-                                                           │ internal network
-                                                           ▼
+│  Next.js Frontend   │ ───────────────────▶│  Django Ninja API    │
+│  (Railway service)  │   /api/...          │  (Railway service,   │
+│  NEXT_PUBLIC_DJANGO_│ ◀───────────────────│Dockerfile + gunicorn)│
+│  BASE_URL           │      JSON           └──────────┬───────────┘
+└─────────────────────┘                                │
+                                                       │ internal network
+                                                       ▼
                                                 ┌──────────────────────┐
-                                                │  PostgreSQL            │
-                                                │  (Railway service)     │
+                                                │  PostgreSQL          │
+                                                │  (Railway service)   │
                                                 └──────────────────────┘
 ```
 
