@@ -125,7 +125,7 @@ If you rename or move backend routes, update this file accordingly.
 
 ## Deployment
 
-This project deploys cleanly to **Railway** as a Node service (or to Vercel, if preferred). See **[`../RAILWAY_DEPLOYMENT_GUIDE.md`](https://github.com/jamseyboy/nextjs_foodOrderApp/blob/main/RAILWAY_DEPLOYMENT_GUIDE.md)** for the full walkthrough of deploying this frontend alongside the Django backend on Railway, including how to wire `NEXT_PUBLIC_DJANGO_BASE_URL` to the backend's public Railway domain.
+This project deploys cleanly to **Railway** as a Node service (or to Vercel, if preferred). See [RAILWAY_DEPLOYMENT_GUIDE.md](https://github.com/jamseyboy/nextjs_foodOrderApp/blob/main/RAILWAY_DEPLOYMENT_GUIDE.md) for the full walkthrough of deploying this frontend alongside the Django backend on Railway, including how to wire `NEXT_PUBLIC_DJANGO_BASE_URL` to the backend's public Railway domain.
 
 ---
 
