@@ -1,6 +1,6 @@
 # 🍔 Food Order App — Frontend (Next.js)
 
-A Next.js (App Router) front end for the food-ordering system. It lets a "seller" create food items and customers, take orders, update order status, and view a daily order summary — all backed by the [Django REST API](../django_foodOrderApp-main).
+A Next.js (App Router) front end for the food-ordering system. It lets a "seller" create food items and customers, take orders, update order status, and view a daily order summary — all backed by the [Django REST API](https://github.com/jamseyboy/django_foodOrderApp/tree/main).
 
 ---
 
